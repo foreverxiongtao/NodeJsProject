@@ -1,6 +1,6 @@
 var exec = require("child_process").exec;
 var querystring = require("querystring");
-fs = require("fs");
+var  fs = require("fs");
 var  formidable = require("formidable");
 function start(response) {
     exec("ls -lah", {timeout: 10000, maxBuffer: 20000 * 1024}, function (error, stdout, stderr) {
